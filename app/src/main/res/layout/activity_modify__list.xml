@@ -8,44 +8,46 @@
 
     <TextView
         android:id="@+id/titleViewET"
-        android:layout_width="273dp"
+        android:layout_width="wrap_content"
         android:layout_height="45dp"
         android:layout_marginStart="68dp"
         android:layout_marginTop="15dp"
         android:hint="Title"
-        android:textSize="20sp"
+        android:textSize="15sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rankView" />
 
     <TextView
         android:id="@+id/linkViewET"
-        android:layout_width="273dp"
+        android:layout_width="wrap_content"
         android:layout_height="39dp"
         android:layout_marginStart="68dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="4dp"
         android:hint="Link"
-        android:textSize="20sp"
+        android:textSize="15sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titleViewET" />
 
     <TextView
         android:id="@+id/reasonViewET"
-        android:layout_width="274dp"
-        android:layout_height="218dp"
+        android:layout_width="272dp"
+        android:layout_height="91dp"
         android:layout_marginStart="68dp"
+        android:layout_marginTop="8dp"
         android:hint="Reason"
-        android:textSize="20sp"
+        android:textSize="15sp"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="362dp" />
+        app:layout_constraintTop_toBottomOf="@+id/linkViewET" />
 
     <EditText
         android:id="@+id/rankView"
         android:layout_width="86dp"
         android:layout_height="30dp"
-        android:layout_marginStart="159dp"
-        android:layout_marginTop="150dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="76dp"
         android:ems="10"
         android:inputType="numberSigned"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -53,11 +55,34 @@
         android:id="@+id/textView6"
         android:layout_width="73dp"
         android:layout_height="46dp"
-        android:layout_marginTop="148dp"
+        android:layout_marginTop="76dp"
         android:layout_marginEnd="4dp"
         android:text="Rank:"
-        android:textSize="20sp"
+        android:textSize="18sp"
         app:layout_constraintEnd_toStartOf="@+id/rankView"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/modifyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="12dp"
+        android:text="Modify"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reasonViewET" />
+
+    <ListView
+        android:id="@+id/displayListView"
+        android:layout_width="405dp"
+        android:layout_height="338dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="9dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/modifyButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
